@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World!");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +49,10 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 25;
+  const myName ="Yonathan";
+  console.log(myAge);
+  console.log(myName);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +79,15 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const sum = num1 + num2;
+  const subtract = num1 - num2;
+  const multiply = num1 * num2;
+  const divide = num1 / num2;
+  
+  console.log(sum);
+  console.log(subtract);
+  console.log(multiply);
+  console.log(divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +106,12 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x = 10;
+  console.log(typeof x);
+  x = "Hello";
+  console.log(typeof x);
+  x = true;
+  console.log(typeof x);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +129,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  isAvailable = !isAvailable;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +156,18 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const message = "Hello World";
+
+  const upper = message.toUpperCase();
+  console.log(upper);
+
+  const lower = message.toLowerCase();
+  console.log(lower);
+
+  const length = message.length;
+  console.log(length);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +194,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const name = "Yonathan";
+  const greeting = `Hello, ${name}! Welcome to JavaScript!`;
+  console.log(greeting);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +217,11 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myVariable;
+  console.log(myVariable);
+
+  let anotherVariable = null;
+  console.log(anotherVariable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -206,7 +241,12 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const book = {
+    title: "Harry Potter",
+    author: "J.K Rowling",
+    year: 1997
+  };
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +266,13 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const book = {
+    title: "Harry Potter",
+    author: "J.K Rowling",
+    year: 1997
+  };
+  console.log(book.title);
+  console.log(book["author"]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,7 +294,14 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const book = {
+    title: "Harry Potter",
+    author: "J.K Rowling",
+    year: 1997
+  };
+  book.publishedYear = 1998;
+  book["genre"] = "Fantasy";
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -267,7 +320,13 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const book = {
+    title: "Harry Potter",
+    author: "J.K Rowling",
+    year: 1997
+  };
+  delete book.author;
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -298,7 +357,9 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+  copy.name = "Bob";
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -318,7 +379,8 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const currentDate = new Date();
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,7 +402,11 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const currentDate = new Date();
+
+  console.log(currentDate.getFullYear());
+  console.log(currentDate.getMonth() +1);
+  console.log(currentDate.getDate());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -365,7 +431,9 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const birthday = new Date(1994, 0, 29);
+  console.log(birthday.toDateString());
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -392,7 +460,10 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const currentDate = new Date();
+  const difference= currentDate - pastDate;
+  const days = difference / (1000 * 60 * 60 * 24);
+  console.log(Math.ceil(days));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -423,7 +494,8 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const message = msgPart1 +" " + msgPart2;
+  console.log(message);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -456,7 +528,12 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes("text"));
+  // false because "text" is not in the string
+  console.log(text.includes("Python"));
+  // false because "Python" is not in the string
+  console.log(text.includes("JavaScript"));
+  // true because "JavaScript" is in the string
 
   // CODE IN THE OPEN LINES ABOVE
 }
